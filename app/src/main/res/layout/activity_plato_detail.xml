@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlatoDetailActivity"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_plato"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_restaurant_black_24dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Restaurant"
+            android:id="@+id/nombre_restaurant_titulo_textview"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            />
+        <TextView
+            android:id="@+id/direccion_restaurant_titulo_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calificacion"
+            android:id="@+id/calificacion_restaurant_titulo_textview"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            />
+        <TextView
+            android:id="@+id/descripcion_restaurant_titulo_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            />
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plato_detail_recyclerview"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_plato"
+/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:src="@drawable/ic_restaurant_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/nombre_rest_textview"
+            android:text="Nombre Restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="6dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/direccion_textview"
+            android:text="Direccion"
+            android:layout_marginTop="2dp"
+            android:padding="6dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calificación"
+            android:layout_marginTop="2dp"
+            android:id="@+id/calificacion_textview"
+            android:padding="6dp"
+            />
+        <TextView
+            android:id="@+id/descripcion_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Descripcion"
+            android:layout_marginLeft="4dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

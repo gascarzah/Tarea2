@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mas_cercano">
+
+    <fragment
+        android:id="@+id/nav_mas_cercano"
+        android:name="com.gafahtec.tarea2.fragments.MasCercanoFragment"
+        android:label="Mas cercano"
+        tools:layout="@layout/fragment_mas_cercano" />
+
+    <fragment
+        android:id="@+id/nav_popular"
+        android:name="com.gafahtec.tarea2.fragments.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular" />
+
+    <fragment
+        android:id="@+id/nav_recomendado"
+        android:name="com.gafahtec.tarea2.fragments.RecomendadoFragment"
+        android:label="Recomendado"
+        tools:layout="@layout/fragment_recomendado" />
+
+
+</navigation>
